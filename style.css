@@ -1,7 +1,265 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Oxygen, sans-serif;
+    background-color: white;
+  }
+
+
+p{
+    max-width: 900px;
+}
+
 a{
    text-decoration: none;
-   color:black;
+   color:white;
 }
 a:hover{
+    text-decoration: underline;
     color:green;
 }
+
+#container{
+    width:80%;
+    margin: auto;
+}
+
+/*--nav*/
+.logo{
+    margin: 0;
+}
+.navbar{
+    position: fixed;
+    top:0px;
+    width:80%;
+    left: 0px;
+
+    height: 10px;
+    padding: 15px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:grey;
+    opacity:0.7;
+    z-index:5;
+
+}
+
+.intro-pic{
+    display: grid;
+    margin-left: 410px;
+    margin-top: -350px;
+    width: 50%; 
+    height: auto;
+    z-index: -2;
+
+}
+
+
+.main-head{
+    font-size:85px;
+    color: green;
+    font-weight: normal;
+    line-height: 100px;
+    margin-left: -100px;
+    padding: 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40px
+}
+
+.main-p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    padding:0px;
+    margin-left: -40px;
+    margin-top: -40px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40px
+
+}
+
+#about{
+    scroll-margin-top: 20em;
+    background-color: grey;
+}
+
+.about-head{
+    text-align: center;
+    color:green;
+    margin-left: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.about-p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home-button{
+    color:black ;
+    background-color: chartreuse;
+    border:none;
+    border-radius: 50px;
+    margin-bottom: -100px;
+}
+.home-button a{
+    color:black;
+}
+/*--resources section*/
+
+.resource {
+    text-align: center;
+    color:green;
+    margin-left: 5px;
+    ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.resource1{
+    margin-top:-30px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+}
+
+.funding-p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+}
+
+.block{
+    float: right;
+    margin-top:-70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:33.3%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.block p{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.funding-sec{
+    text-align: center;
+    color:green;
+}
+
+.funding-p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*--contact*/
+
+#contact{
+    background-color: grey;
+}
+.Contact-sec{
+    text-align: center;
+    color: green;
+}
+
+.contact-container {
+    width: 21em;
+    margin-top: -10px;
+    display: flex;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #contact-form > label {
+    color: #fff;
+    font-family: Oxygen, sans-serif;
+  }
+  
+  #contact-form > input {
+    padding: 0 5px;
+    height: 37px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 3px solid #2ecc71;
+    box-shadow: 0px 0px 15px 3px rgba(15, 15, 15, 0.2);
+  }
+  
+  #contact-form > input::placeholder {
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+  }
+  
+  #contact-form > textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40px;
+    margin-bottom: 60px;
+    font-size: 36px;
+  }
+  
+  #contact-form > textarea::placeholder {
+    max-width: 100%;
+    min-width: 100%;
+    height: 60px;
+    margin-bottom: 60px;
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+  }
+
+  .sub-button{
+    color:black ;
+    background-color: chartreuse;
+    border:none;
+    border-radius: 50px;
+    width: 60px;
+    margin-top: 0px;
+}
+/*--footer elements*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .copyright{
+      text-align: center;
+      background-color: green;
+      margin: 0;
+      width:100%;
+  }
+
+  /*Media Queries*/
+@media screen and (max-width: 968px) {
+    .intro-pic {
+      flex-direction: column;
+    }
+  }
